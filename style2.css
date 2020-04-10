@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #e9ecf4;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor1 {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-gap: 10px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header1       header1         header1"
+                        "content1       conten1         sidebar1"
+                        "content2       content2        sidebar1"
+                        "footer1        footer1         footer1"
+}
+.contenedor1 > div,
+.contenedor1 .header1,
+.contenedor1 .content1,
+.contenedor1 .sidebar1,
+.contenedor1 .content2,
+.contenedor1 .footer1 {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contenedor1 .header1 {
+    background: #08153b;
+    color: #ffffff;
+    grid-area: header1;
+    text-align: center;
+}
+.contenedor1 .content1 {
+    background: #5c1f1f;
+    color: #ffffff;
+    grid-area: content1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    text-align: justify;
+}
+.contenedor1 .sidebar1 {
+    background: #913091;
+    color: #e9ecf4;
+    grid-area: sidebar1;
+    text-align: center;
+}
+.contenedor1 .content2 {
+    background: #d6116d;
+    color: #000;
+    grid-area: content2;
+    text-align: justify;
+}
+.contenedor1 .footer1 {
+    background: #000000;
+    color: aqua;
+    grid-area: footer1;
+    text-align: center;
+}
