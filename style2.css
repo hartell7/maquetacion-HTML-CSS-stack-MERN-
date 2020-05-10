@@ -14,11 +14,13 @@ body {
     grid-gap: 10px;
 
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
 
     grid-template-areas: "header1       header1         header1"
                         "content1       conten1         sidebar1"
                         "content2       content2        sidebar1"
+                        "content3       content3        content3"
+                        "content4       content4        content4"      
                         "footer1        footer1         footer1"
 }
 .contenedor1 > div,
@@ -26,6 +28,8 @@ body {
 .contenedor1 .content1,
 .contenedor1 .sidebar1,
 .contenedor1 .content2,
+.contenedor1 .content3,
+.contenedor1 .content4,
 .contenedor1 .footer1 {
     background: #ffffff;
     padding: 20px;
@@ -42,7 +46,7 @@ body {
     text-align: center;
 }
 .contenedor1 .content1 {
-    background: #5c1f1f;
+    background:linear-gradient(to left, rgb(22, 75, 9), rgb(63, 207, 164));
     color: #ffffff;
     grid-area: content1;
     grid-column-start: 1;
@@ -51,15 +55,26 @@ body {
     text-align: justify;
 }
 .contenedor1 .sidebar1 {
-    background: #913091;
+    background: #d6116d;
     color: #e9ecf4;
     grid-area: sidebar1;
     text-align: center;
 }
 .contenedor1 .content2 {
-    background: #d6116d;
-    color: #000;
+    background: linear-gradient(to right, #d6116d, black);
+    color: #ffffff;
     grid-area: content2;
+    text-align: justify;
+}
+.contenedor1 .content3 {
+    grid-area: content3;
+    background: linear-gradient(to top right, yellow, teal);
+    text-align: justify;
+}
+.contenedor1 .content4 {
+    background: linear-gradient(to top left, purple, red);
+    grid-area: content4;
+    color: #ffffff;
     text-align: justify;
 }
 .contenedor1 .footer1 {
