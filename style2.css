@@ -17,10 +17,10 @@ body {
     grid-template-rows: repeat(6, auto);
 
     grid-template-areas: "header1       header1         header1"
-                        "content1       conten1         sidebar1"
+                        "content1       content1        sidebar1"
                         "content2       content2        sidebar1"
-                        "content3       content3        content3"
-                        "content4       content4        content4"      
+                        "photo1         content3        content3"
+                        "photo2         content4        content4"      
                         "footer1        footer1         footer1"
 }
 .contenedor1 > div,
@@ -28,7 +28,9 @@ body {
 .contenedor1 .content1,
 .contenedor1 .sidebar1,
 .contenedor1 .content2,
+.contenedor1 .photo1,
 .contenedor1 .content3,
+.contenedor1 .photo2,
 .contenedor1 .content4,
 .contenedor1 .footer1 {
     background: #ffffff;
@@ -46,7 +48,7 @@ body {
     text-align: center;
 }
 .contenedor1 .content1 {
-    background:linear-gradient(to left, rgb(22, 75, 9), rgb(63, 207, 164));
+    background:linear-gradient(to left, rgb(189, 24, 189), purple);
     color: #ffffff;
     grid-area: content1;
     grid-column-start: 1;
@@ -70,12 +72,23 @@ body {
     grid-area: content3;
     background: linear-gradient(to top right, yellow, teal);
     text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .contenedor1 .content4 {
     background: linear-gradient(to top left, purple, red);
     grid-area: content4;
     color: #ffffff;
     text-align: justify;
+}
+.contenedor1 .photo1 {
+    grid-area: photo1;
+    background: linear-gradient(red, blue);
+    color: white;
+}
+.contenedor1 .photo2 {
+    grid-area: photo2;
+    background: linear-gradient(blue, yellow);
+    color: orangered;
 }
 .contenedor1 .footer1 {
     background: #000000;
