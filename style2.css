@@ -36,8 +36,8 @@ body {
     -o-border-radius: 10px;
 }
 .contenedor1 .header1 {
-    background: #08153b;
-    color: #ffffff;
+    background: linear-gradient(to left, teal, greenyellow);
+    color: rgba(78, 7, 66, 0.966);
     grid-area: header1;
     text-align: center;
 }
